@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTf-8">
+		<title>NostalgiCalculator.JS</title>
+		<link rel="stylesheet" type="text/css" href="./css/normalize.css">
+		<link href="https://fonts.googleapis.com/css?family=Days+One" rel="stylesheet"> 
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+	</head>
+	<body>
+		<div id="calculator">
+
+		<form id="calc-1" name="calc">
+
+			<div id="top-portion">
+				<div id="screen">
+					<span id="memory">M</span>
+					<input type="text" id="display" class="display" name="screen" disabled>
+				</div>
+				<div id="label">
+					<span id="brand">SHMEXAS SHMINSTRUMENTS</span>
+					<span id="model">SI-108</span>
+				</div>
+				<div id="solar-sensor">
+					<div class="solar"></div>
+					<div class="solar"></div>
+					<div class="solar"></div>
+					<div class="solar"></div>
+				</div>
+			</div>
+
+			<div id="bottom-portion">
+				<div id="left-buttons">
+					<input type="button" id="flipPos" class="red-key special" value="+/-">
+
+					<input type="button" class="red-key special" id="sqrt" value="&Sqrt;">
+					<input type="button" id="percent" class="red-key special" value="%">
+					<br>
+					<input type="button" id="mrc" class="red-key" value="MRC">
+					<input type="button" id="mMinus" class="red-key" value="M-">
+					<input type="button" id="mPlus" class="red-key" value="M+">
+					<br>
+					<input type="button" id="seven" class="white-key numbers" value="7">
+					<input type="button" id="eight" class="white-key numbers" value="8">
+					<input type="button" id="nine" class="white-key numbers" value="9">
+					<br>
+					<input type="button" id="four" class="white-key numbers" value="4">
+					<input type="button" id="five" class="white-key numbers" value="5">
+					<input type="button" id="six" class="white-key numbers" value="6">
+					<br>
+					<input type="button" id="one" class="white-key numbers" value="1">
+					<input type="button" id="two" class="white-key numbers" value="2">
+					<input type="button" id="three" class="white-key numbers" value="3">
+					<br>
+					<input type="button" id="onc" class="red-key" value="ON/C">
+					<input type="button" id="zero" class="white-key numbers" value="0">
+					<input type="button" id="decimal" class="white-key special" value=".">
+				</div>
+				<div id="right-buttons">
+					<input type="button" id="divide" class="red-key special" value="&divide;">
+					<input type="button" id="multiply" class="red-key" value="X" >
+					<input type="button" id="minus" class="red-key special" value="-" >
+					<input type="button" id="plus" class="red-key special" value="+" >
+					<input type="button" id="equals" class="red-key special" value="=">
+				</div>
+			</div>
+
+		</form>
+
+
+
+
+		</div>
+		<script type="text/javascript" src="./src/main.js"></script>
+	</body>
+</html>

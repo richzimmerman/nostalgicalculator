@@ -1,0 +1,195 @@
+/** Styles **/
+
+/* Box shadow buttons and remove box-shadow on mouse down */
+
+@font-face {
+	font-family: digit;
+	src: url(../fonts/digital-7.ttf);
+}
+
+body, #calculator, #left-buttons, #right-buttons, #bottom-portion, #screen {
+	display: flex;
+}
+
+#screen {
+	width: 100%;
+	padding: 5px 20px;
+	margin-left: -19px;
+	margin-bottom: 15px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: center;
+	border: solid 2px #000073;
+	background-image: url(../images/display.png);
+	position: relative;
+}
+
+.display {
+	font-family: digit;
+	color: rgba(0,0,0,1);
+	width: 90%;
+	height: 54px;
+	text-align: right;
+	font-size: 56px;
+	letter-spacing: 3px;
+	border-color: #a8a8a8;
+	background-color: #bdbdbd;
+	margin-left: -40px;
+}
+
+#memory {
+	visibility: hidden;
+	position: absolute;
+	top: 8px;
+	left: 45px;
+}
+
+#label {
+	color: white;
+	position: relative;
+}
+
+#brand {
+	font-family: 'Verdana';
+	font-size: 15px;
+}
+
+#model {
+	font-family: 'Courier New';
+	font-weight: bolder;
+	font-size: 40px;
+	position: absolute;
+	top: -8px;
+	right: -3px;
+}
+
+.solar {
+	display: inline-block;
+	width: 41px;
+	height: 40px;
+	padding: 0;
+	margin: 5px -6px 0 0;
+	font-size: 30px;
+	background-color: #464646;
+	border: 2px solid black;
+	letter-spacing: 0;
+}
+
+.solar:first-child {
+	border-radius: 3px 0 0 3px;
+}
+
+.solar:nth-child(3) {
+	margin-left: -1px;
+}
+
+.solar:last-child {
+	margin-left: -1px;
+	border-radius: 0 3px 3px 0;
+}
+
+#calculator {
+	flex-grow: 1;
+	justify-content: space-around;
+}
+
+#calc-1 {
+	margin-top: 50px;
+	height: 600px;
+	width: 400px;
+	border: solid 2px #000073;
+	padding: 20px;
+	border-radius: 3px 3px 20px 20px;
+	background-color: #0000e5;
+}
+
+#top-portion {
+	height: 30%;
+	width: 100%;
+	margin-left: -3px;
+	margin-bottom: 3px;
+}
+
+#bottom-portion {
+	flex-direction: row;
+	height: 70%;
+	width: 100%;
+	border: solid 2px #000073;
+	border-radius: 3px;
+	padding: 2px;
+	align-content: center;
+	margin-left: -4px;
+	margin-top: -20px;
+}
+
+#left-buttons {
+	flex-wrap: wrap;
+	width: 70%;
+	height: 100%;
+}
+
+#left-buttons input {
+	height: 13%;
+	margin: 5px 5px 5px 15px;
+	width: 25%;
+}
+
+#right-buttons {
+	flex-direction: column;
+	width: 30%;
+	height: 100%;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+#right-buttons input {
+	width: 70px;
+	height: 13%;
+	margin: 5px 15px 5px 5px;
+}
+
+#bottom-portion input[value="="] {
+	height: 125px;
+	margin-bottom: 10px;
+	padding-bottom: 90px;
+}
+
+.red-key,
+.white-key {
+	font-family: 'Days One', sans-serif;
+	font-size: 15px;
+	text-align: left;
+	padding-bottom: 25px;
+	border: solid 1px black;
+	border-radius: 5px;
+}
+
+.red-key:active,
+.white-key:active {
+	transform: translate(-3px,2px);
+	box-shadow: none;
+}
+
+.special {
+	font-size: 25px;
+}
+
+.numbers {
+	font-size: 17px;
+}
+
+.red-key{
+	background-color: #ff1919;
+	color: white;
+	box-shadow: -1px 1px 0 1px #ff1919;
+}
+
+.white-key {
+	background-color: white;
+	color: #0000e5;
+	box-shadow: -1px 1px 0 1px white;
+}
+
+#sqrt {
+	padding-top: 3px;
+}
