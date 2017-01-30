@@ -34,7 +34,7 @@ body, #calculator, #left-buttons, #right-buttons, #bottom-portion, #screen {
 	letter-spacing: 3px;
 	border-color: #a8a8a8;
 	background-color: #bdbdbd;
-	margin-left: -40px;
+	margin: 0 auto;
 }
 
 #memory {
